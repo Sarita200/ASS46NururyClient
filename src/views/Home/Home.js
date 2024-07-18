@@ -11,7 +11,7 @@ function Home() {
 
     const loadPlants = async () => {
         toast.loading("Loading Plants")
-        const response = await axios.get(`http://localhost:8000/plants`)
+        const response = await axios.get(`https://ass46nursuryclient.onrender.com/plants`)
 
         toast.dismiss()
         toast.success("Plants Loaded Successfully")
@@ -46,9 +46,6 @@ function Home() {
                     />)
 
                 })
-            }
-            {
-                plants.length == 0 ? "Loading......." :null
             }
         </div>
     )
