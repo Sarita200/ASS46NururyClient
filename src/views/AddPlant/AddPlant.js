@@ -92,9 +92,7 @@ function AddPlant() {
       </form>
       <br /><br />
 
-      <div className='ShowBtnContainer'>
       
-      </div>
 
       <Toaster />
     </div>

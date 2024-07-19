@@ -11,6 +11,7 @@
     text-align: center;
     color: rgb(9, 177, 239);
     font-size: 38px;
+    z-index: 10px;
 }
 .formContainer{
     text-align: center;
@@ -34,14 +35,14 @@
     font-size: 18px;
     border: ;
     background-color: rgb(236, 246, 250);
-    color: white;
+    color: black;
 }
 .ShowBtnContainer{
     margin: 10px auto;
 }
 .showAllPlantsBtn{
     background-color: rgb(60, 180, 224);
-    color: white;
+    color: Black;
     margin :0 4px;
     padding: 9.2px;
     border-radius: 10px;
