@@ -7,3 +7,46 @@
     width: 250px;
     object-fit: cover;
 }
+.PageTitle{
+    text-align: center;
+    color: rgb(9, 177, 239);
+    font-size: 38px;
+}
+.formContainer{
+    text-align: center;
+    background-color: rgb(243, 249, 251);
+    width: 400px;
+    margin: 10px auto;
+    padding: 29px 20px;
+    border-color: rgb(5, 26, 26);
+    border-style: solid ;
+    border-width: 1.5px;
+    box-shadow: 0 0 10px 8px rgb(231, 241, 243);
+    border-radius: 10px;
+    border: ;
+}
+.PlantInput{
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 5px 20px;
+    font-size: 18px;
+    border: ;
+    background-color: rgb(236, 246, 250);
+    color: white;
+}
+.ShowBtnContainer{
+    margin: 10px auto;
+}
+.showAllPlantsBtn{
+    background-color: rgb(60, 180, 224);
+    color: white;
+    margin :0 4px;
+    padding: 9.2px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+}
