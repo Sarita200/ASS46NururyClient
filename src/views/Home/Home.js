@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react'
 import "./Home.css"
 import PlantCard from '../../components/PlantCard/PlantCard'
 import axios from 'axios'
-import toast , {Toaster}from 'react-hot-toast'
+import toast, { Toaster } from 'react-hot-toast'
 import ImgAdd from './add.png'
+import { Link } from 'react-router-dom'
 
 
 function Home() {
@@ -48,9 +49,11 @@ function Home() {
 
                 })
             }
-            <Toaster/>
+            <Toaster />
 
-            <img src={ImgAdd} className='AddBtn' />
+            <Link to="/add">
+                <img src={ImgAdd} className='AddBtn' />
+            </Link>
         </div>
     )
 }
