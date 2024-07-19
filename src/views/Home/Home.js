@@ -24,7 +24,7 @@ function Home() {
     }, [])
 
     return (
-        <div>
+        <div >
             <h1>Plants Sampling</h1>
 
             {
