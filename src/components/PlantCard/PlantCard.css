@@ -4,19 +4,19 @@
     border-radius: 10px ;
     margin: 20px;
     position: relative; 
-    height: 150px;
     text-decoration: none;
 }
 .plantTitle{
-    font-size: 20px;
+    font-size: 30px;
+    
 }
 .PlantCardImg{
-    height: 140px;
     width: 200px;
     object-fit: cover;
     position: absolute;
     top: 10px;
     right: 10px;
+    height: 200px;
 }
 .action-btn{
     background-color: rgb(11, 8, 7);

@@ -3,7 +3,7 @@ import "./Home.css"
 import PlantCard from '../../components/PlantCard/PlantCard'
 import axios from 'axios'
 import toast, { Toaster } from 'react-hot-toast'
-import ImgAdd from './add.png'
+import ImgAdd from './add (2).png'
 import { Link } from 'react-router-dom'
 
 

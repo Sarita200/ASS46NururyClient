@@ -20,7 +20,8 @@ function PlantCard({ _id, name, category, image, price, description ,loadPlants}
       <h1 className='plantTitle'>{name}</h1>
       <p className='PlantPrice'>Price : {price}</p>
       <img src={image} className='PlantCardImg' />
-
+      <p className='Plantcategory'>Category :{category}</p>
+      <p className='Plantdescription'>{description}</p>
       <div>
         <Link className='action-btn editBtn' to ={`/update/${_id}`}> Edit</Link>
 
