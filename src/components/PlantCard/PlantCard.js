@@ -22,7 +22,7 @@ function PlantCard({ _id, name, category, image, price, description ,loadPlants}
       <img src={image} className='PlantCardImg' />
       <p className='Plantcategory'>Category :{category}</p>
       <p className='Plantdescription'>{description}</p>
-      <div>
+    <div>
         <Link className='action-btn editBtn' to ={`/update/${_id}`}> Edit</Link>
 
         <button
