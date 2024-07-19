@@ -45,7 +45,10 @@ function Home() {
                         image={image}
                         price={price}
                         description={description}
-                    />)
+                        loadPlants = {loadPlants}
+                    />
+                    
+                )
 
                 })
             }

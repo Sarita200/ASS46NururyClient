@@ -18,8 +18,13 @@
     top: 10px;
     right: 10px;
 }
-.ction-btn{
-    background-color: red;
+.action-btn{
+    background-color: rgb(11, 8, 7);
+    color: white;
+    margin :0 4px;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 2px;
 }
 .editBtn{
 
