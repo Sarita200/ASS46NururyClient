@@ -40,5 +40,17 @@
 
 }
 @media screen and(max-width:500px){
+    .plantCard{
+        width:200 ;
+    }
+    .plantTitle{
+        font-size: 10px;
+    }
+    .PlantCardImg{
+        display: none;
+    }
+    .Plantdescription{
+        width: 150px;
+    }
     
 }
