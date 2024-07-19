@@ -3,6 +3,7 @@ import "./Home.css"
 import PlantCard from '../../components/PlantCard/PlantCard'
 import axios from 'axios'
 import toast , {Toaster}from 'react-hot-toast'
+import ImgAdd from './add.png'
 
 
 function Home() {
@@ -48,6 +49,8 @@ function Home() {
                 })
             }
             <Toaster/>
+
+            <img src={ImgAdd} className='AddBtn' />
         </div>
     )
 }
