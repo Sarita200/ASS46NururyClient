@@ -1,12 +1,14 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react'
-import React  from 'react'
+import React from 'react'
+import toast  from 'react-hot-toast';
+import { Link, useParams } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast';
 
-import { useParams } from 'react-router-dom'
 
 function UpdatePlant() {
 
-  const {id} = useParams();
+  const { id } = useParams();
 
   const [name, setName] = useState("")
   const [category, setCategory] = useState("")
@@ -14,29 +16,47 @@ function UpdatePlant() {
   const [image, setImage] = useState("")
   const [description, setDescription] = useState("")
 
-  const UpdatePlant = ()=>{
+  const UpdatePlant = async () => {
+    const response = await axios.put(`${process.env.REACT_APP_API_URL}/plant/${id}` , {
+      name: name,
+      price: price,
+      category: category,
+      image: image,
+      description: description
+    })
+
+    toast.success(response.data.message)
+
 
   }
 
-  const loadPlant =async () =>{
-    if(!id){
+  const loadPlant = async (id) => {
+    if (!id) {
       return
     }
     const response = await axios.get(`${process.env.REACT_APP_API_URL}/plant/${id}`)
+    const plantData =response.data.data
+
+    const { name, image, price, category, description } = plantData
+
+    setName(name)
+    setImage(image)
+    setCategory(category)
+    setPrice(price)
+    setDescription(description)
   }
 
-  useEffect(() =>{
-    if(id){
-      loadPlant(id);
-    }
+  useEffect(() => {
+      loadPlant(id)
+
   }, [id])
 
 
   return (
     <div>
-        <h1>Update Plant :{id}</h1>
+      <h1>Update Plant :{id}</h1>
 
-        <form>
+      <form>
         <input
           type='text'
           placeholder='Enter plant Name'
@@ -61,7 +81,7 @@ function UpdatePlant() {
           className='PlantInput'
         />
 
-        <img src={image} className='PlantImg'/>
+        <img src={image} className='PlantImg' alt='Img' />
 
         <input
           type='text'
@@ -82,11 +102,12 @@ function UpdatePlant() {
 
 
 
-        <button type='button' onAuxClick={UpdatePlant} >Update Plant</button>
+        <button type='button' onClick={UpdatePlant} >Update Plant</button>
       </form>
-      <br/><br/>
+      <br /><br />
 
-
+      <Link to='/'>Show All plants</Link>
+    <Toaster/>
     </div>
   )
 }
