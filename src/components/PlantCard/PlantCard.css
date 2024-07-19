@@ -41,8 +41,10 @@
 }
 @media screen and(max-width:500px){
     .plantCard{
-        width: 300px;
+        width: 200px;
     }
-    
+    .Plantdescription{
+        width: 150px;
+    }
     
 }
