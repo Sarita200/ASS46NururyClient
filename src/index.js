@@ -5,6 +5,7 @@ import AddPlant from './views/AddPlant/AddPlant';
 
 import { Toaster } from 'react-hot-toast';
 import { createBrowserRouter , RouterProvider } from 'react-router-dom';
+import UpdatePlant from './views/UpdatePlant/UpdatePlant';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +19,10 @@ const router = createBrowserRouter([
     path :"/add",
     element :<AddPlant/>
   },
-
+  {
+    path :"/update/:id",
+    element :<UpdatePlant/>
+  },
   {
     path :"*",
     element :<h1>404 Not Found</h1>

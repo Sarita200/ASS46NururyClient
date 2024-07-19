@@ -2,6 +2,7 @@ import React from 'react'
 import "./PlantCard.css"
 import toast from 'react-hot-toast'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 
 
@@ -21,7 +22,7 @@ function PlantCard({ _id, name, category, image, price, description ,loadPlants}
       <img src={image} className='PlantCardImg' />
 
       <div>
-        <button type='button' className='action-btn editBtn'> Edit</button>
+        <Link className='action-btn editBtn' to ={`/update/${_id}`}> Edit</Link>
 
         <button
           type='button'
