@@ -6,6 +6,7 @@ function PlantCard({_id , name , category , image , price , description}) {
     <div className='plantCard'>
       <h1 className='plantTitle'>{name}</h1>
       <p className='PlantPrice'>Price : {price}</p>
+      <img src={image} className='PlantCardImg'
     </div>
   )
 }

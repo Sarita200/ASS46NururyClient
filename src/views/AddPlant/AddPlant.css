@@ -3,5 +3,7 @@
     margin: 20px;
 }
 .PlantImg{
-    
+    height: 170px;
+    width: 250px;
+    object-fit: cover;
 }
