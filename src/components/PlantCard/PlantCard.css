@@ -32,6 +32,7 @@
     margin-bottom: 2px;
     text-decoration: none;
     border: none;
+    cursor: pointer;
 }
 .editBtn{
     padding: 8px 15px;
